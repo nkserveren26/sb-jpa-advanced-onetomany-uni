@@ -25,9 +25,20 @@ public class CluddemoApplication {
 
 			// createCourseAndReviews(appDAO);
 
-			retrieveCourseAndReviews(appDAO);
+			//retrieveCourseAndReviews(appDAO);
+
+			deleteCourseAndReviews(appDAO);
 
 		};
+	}
+
+	private void deleteCourseAndReviews(AppDAO appDAO) {
+
+		int theId = 10;
+
+		System.out.println("Delete course id: " + theId);
+
+		appDAO.deleteCourseById(theId);
 	}
 
 	private void retrieveCourseAndReviews(AppDAO appDAO) {
